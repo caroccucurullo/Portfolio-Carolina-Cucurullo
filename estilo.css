@@ -142,11 +142,11 @@ header nav ul li span.selected {
     width: 50%;
     height: 100vh;
     clip-path: ellipse(90% 90% at left);
-    /* background-color: #4c4c4c; */
+    background-color: #4c4c4c;
 
 }
 
-#inicio .contenedor-img img {
+#inicio .contenedor-img .img {
     background-image: XXX;
     background-size: cover;
     width: 100%;
@@ -155,3 +155,83 @@ header nav ul li span.selected {
    
 }
 
+/*-------SOBRE MI--------*/
+
+#sobremi .contenedor {
+    padding: 150px 30px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+}
+
+#sobremi .contenedor .contenedor-izq {
+    width: 50%;   
+}
+
+#sobremi .contenedor .contenedor-izq .img {
+    width: 50%;
+}
+
+
+#sobremi .contenedor .contenedor-der {
+    width: 50%;
+    padding-left: 50px;
+}
+
+#sobremi .contenedor .contenedor-der .info h2{
+   display: inline-block;
+   background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#sobremi .contenedor .contenedor-der .info h3 {
+    font-size: 30px;
+    line-height: 1.4;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+#sobremi .contenedor .contenedor-der .info p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 15px;
+    color: #767676;
+}
+
+#sobremi .contenedor .contenedor-der .info .btn-descargar {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 15px 45px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#sobremi .contenedor .contenedor-der .info .btn-descargar:hover {
+    background-color: #4c4c4c;
+    color: white;
+}
+
+/*-------SKILLS--------*/
+
+.skills {
+    padding: 0 20px;
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    top: -170px;
+}
+
+.skills .fila {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.skills .fila . {
+    width: 30%;
+    text-align: center;
+}
