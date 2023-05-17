@@ -157,37 +157,45 @@ header nav ul li span.selected {
 
 /*-------SOBRE MI--------*/
 
+#sobremi {
+    height: 65vh;
+}
+
 #sobremi .contenedor {
-    padding: 150px 30px;
-    max-width: 1000px;
+    padding: 100px 40px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
+
 }
 
 #sobremi .contenedor .contenedor-izq {
-    width: 50%;   
+    width: 50%;
+    background-color: black; 
 }
 
 #sobremi .contenedor .contenedor-izq .img {
-    width: 50%;
+    width: 100%;
+
 }
 
 
 #sobremi .contenedor .contenedor-der {
     width: 50%;
     padding-left: 50px;
+  
 }
 
-#sobremi .contenedor .contenedor-der .info h2{
-   display: inline-block;
-   background-color: #f2f2f2;
+#sobremi .contenedor .contenedor-der .info span{
+    display: inline-block;
+    background-color: #f2f2f2;
     padding: 15px;
     margin-bottom: 15px;
 }
 
 #sobremi .contenedor .contenedor-der .info h3 {
     font-size: 30px;
-    line-height: 1.4;
+    line-height: 1.4px;
     font-weight: 800;
     margin-bottom: 15px;
 }
@@ -199,39 +207,70 @@ header nav ul li span.selected {
     color: #767676;
 }
 
-#sobremi .contenedor .contenedor-der .info .btn-descargar {
+#sobremi .contenedor .contenedor-der .info .btn-descargarCV {
     display: inline-block;
-    background-color: #f2f2f2;
+    background-color:black;
     padding: 15px 45px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
     border-radius: 10px;
-    transition: .5s;
+    transition: .2s;
 }
 
-#sobremi .contenedor .contenedor-der .info .btn-descargar:hover {
-    background-color: #4c4c4c;
-    color: white;
+#sobremi .contenedor .contenedor-der .info .btn-descargarCV:hover {
+    background-color: #767676;
+    color: black;
 }
 
 /*-------SKILLS--------*/
+#skills {
+    height: 50vh;
+    background-color: #f2f2f2;
+  
+}
+
+#skills .contenedor-skills {
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+#skills .contenedor-skills .fila1 {
+    flex-wrap: wrap;
+    display: flex;
+    background-color: black;
+}
+#skills .contenedor-skills .fila2 {
+    flex-wrap: wrap;
+    display: flex;
+}
 
 .skills {
-    padding: 0 20px;
-    max-width: 1100px;
+    max-width: 100%;
     margin: auto;
-    position: relative;
-    top: -170px;
-}
-
-.skills .fila {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.skills .fila . {
-    width: 30%;
     text-align: center;
+    margin-top: 20px;
 }
+  
+#skills h2 {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .contenedor-skills .card{
+    padding: 10px;
+  }
+
+  .card {
+    border-radius: 11px;
+    box-shadow: 0 3px 10px;
+    padding: 25px;
+    margin: 15px;
+    background-color: white;
+
+  }
