@@ -20,28 +20,32 @@ header {
     display: flex;
     justify-content: space-between;
     z-index: 99;
-    padding: 20px;
     transition: .5s;
 }
 
 header h1 {
     font-family: 'Pacifico';
-
+    font-size: 35px;
+    text-shadow: 0.5px 1px rgb(249, 246, 246);
+    letter-spacing: 2px;
+    margin-left: 20px;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
+    margin-right: 20px;
+    margin-top: 20px;
 }
 
 header nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li .linea {
     display: block;
     background-color: black;
-    height: 2px;
+    height: 1.5px;
     width: 0%;
     transition: .5s;
 }
@@ -80,15 +84,14 @@ header nav ul li span.selected {
     position: relative;
     height: 100vh;
     padding: 0 40px;
-
 }
 
 #inicio .contenedor-cont {
     max-width: 1500px;
     height: 100%;
     margin: auto;
-   
 }
+
 #inicio .contenedor-cont .info {
     position: relative;
     top: 50%;
@@ -119,10 +122,10 @@ header nav ul li span.selected {
     padding-left: 2px;
     text-shadow: 3px 3px black;
     letter-spacing: 5px;
+    margin-bottom: 15px;
 }
 
 #inicio .contenedor-cont .info h3 {
-    display: inline-block;
     font-size: 25px;
     color: #4c4c4c;
     margin-bottom: 15px;
@@ -132,7 +135,6 @@ header nav ul li span.selected {
     display: inline-block;
     color: #4c4c4c;
     font-size: 25px;
-    margin-right: 15px;
 }
 
 #inicio .contenedor-img{
@@ -141,13 +143,11 @@ header nav ul li span.selected {
     left: 0;
     width: 50%;
     height: 100vh;
-    clip-path: ellipse(90% 90% at left);
-    background-color: #4c4c4c;
-
+    clip-path: ellipse(90% 80% at left);
 }
 
 #inicio .contenedor-img .img {
-    background-image: XXX;
+    background-image: url(../img/compu.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -158,91 +158,97 @@ header nav ul li span.selected {
 /*-------SOBRE MI--------*/
 
 #sobremi {
-    height: 65vh;
+    height: 100vh; 
 }
 
-#sobremi .contenedor {
-    padding: 100px 40px;
+#sobremi .contenedor-sobremi {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 65px;
+    padding-bottom: 20px;
     max-width: 1200px;
     margin: auto;
     display: flex;
 
 }
 
-#sobremi .contenedor .contenedor-izq {
+#sobremi .contenedor-sobremi .contenedor-izq {
     width: 50%;
-    background-color: black; 
-}
-
-#sobremi .contenedor .contenedor-izq .img {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
+#sobremi .contenedor-sobremi .contenedor-izq img {
+    max-width: 600px;
+    display: flex;
+    border-radius: 50%;
+    border: 8px solid #f2f2f2;
+}
 
-#sobremi .contenedor .contenedor-der {
+#sobremi .contenedor-sobremi .contenedor-der {
     width: 50%;
-    padding-left: 50px;
-  
+    padding-left: 30px;
 }
 
-#sobremi .contenedor .contenedor-der .info span{
+#sobremi .contenedor-sobremi .contenedor-der .info span{
     display: inline-block;
     background-color: #f2f2f2;
     padding: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-#sobremi .contenedor .contenedor-der .info h3 {
-    font-size: 30px;
+#sobremi .contenedor-sobremi .contenedor-der .info h3 {
+    font-size: 28px;
     line-height: 1.4px;
     font-weight: 800;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-#sobremi .contenedor .contenedor-der .info p {
-    font-size: 20px;
+#sobremi .contenedor-sobremi .contenedor-der .info p {
+    font-size: 18px;
     line-height: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #767676;
 }
 
-#sobremi .contenedor .contenedor-der .info .btn-descargarCV {
+#sobremi .contenedor-sobremi .contenedor-der .info .btn-descargarCV {
     display: inline-block;
     background-color:black;
     padding: 15px 45px;
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 10px;
     transition: .2s;
 }
 
-#sobremi .contenedor .contenedor-der .info .btn-descargarCV:hover {
+#sobremi .contenedor-sobremi .contenedor-der .info .btn-descargarCV:hover {
     background-color: #767676;
     color: black;
 }
 
 /*-------SKILLS--------*/
+
 #skills {
-    height: 50vh;
     background-color: #f2f2f2;
-  
+    padding: 30px;
 }
 
 #skills .contenedor-skills {
     margin: auto;
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: blueviolet;
 }
 
 #skills .contenedor-skills .fila1 {
     flex-wrap: wrap;
     display: flex;
-    background-color: black;
 }
 #skills .contenedor-skills .fila2 {
     flex-wrap: wrap;
@@ -256,21 +262,177 @@ header nav ul li span.selected {
     margin-top: 20px;
 }
   
-#skills h2 {
-    margin-bottom: 20px;
-    margin-top: 10px;
+#skills h3 {
+    font-size: 28px;
+    line-height: 1.4px;
+    font-weight: 800;
     text-align: center;
-  }
+}
   
-  .contenedor-skills .card{
+.contenedor-skills .card{
     padding: 10px;
-  }
+}
 
-  .card {
+.card {
     border-radius: 11px;
     box-shadow: 0 3px 10px;
     padding: 25px;
     margin: 15px;
     background-color: white;
+}
 
-  }
+/*-------PROYECTOS--------*/
+
+#proyectos {
+    width: 100vh;
+}
+
+#proyectos .contenedor-proyectos {
+    padding: 75px 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#proyectos .contenedor-proyectos .contenedor-izq span {
+    display: inline-block;
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#proyectos .contenedor-proyectos .encabezado-proyectos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#proyectos .contenedor-proyectos .encabezado-proyectos a {
+    text-decoration: none;
+    display: inline-block;
+    color:black;
+    padding: 5px 15px;
+}
+
+.activada {
+    background-color: black;
+    color: white !important;
+} 
+
+#proyectos .contenedor-proyectos .contenedor-izq h3 {
+    font-size: 28px;
+    line-height: 1.4px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+#proyectos .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 30px;
+}
+
+#proyectos .galeria img {
+    width: 100%;
+    transition: .5s;
+}
+
+#proyectos .galeria .proyecto {
+    position: relative;
+    overflow: hidden;
+}
+
+#proyectos .galeria h3 {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    transition: .5s;
+    opacity: 0;
+}
+
+#proyectos .galeria .proyecto:hover h3{
+    opacity: 1;
+}
+
+#proyectos .galeria .proyecto:hover img{
+    transform: scale(1.1);
+}
+
+/*-------CONTACTO--------*/
+
+.contacto {
+    height: 85vh;
+    background-color: black;
+    background-size: cover;
+    color: white;
+    padding: 40px 20px;
+}
+
+.contacto .contenedor-contacto {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.contacto h3 {
+    font-size: 28px;
+    line-height: 1.2px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contacto .contenedor-contacto .fila {
+    display: flex;
+}
+
+.contacto .contenedor-contacto .fila .col {
+    width: 50%;
+}
+
+.contacto .contenedor-contacto .info {
+    margin-bottom: 20px;
+    border-left: 3px solid gray;
+    padding-left: 20px;
+}
+
+.contacto .contenedor-contacto .info p {
+    color: #767676;
+}
+
+.contacto input, .contacto textarea {
+    width: 100%;
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1.5px solid white;
+    margin-bottom: 20px;
+    outline: none;
+    color: white;
+}
+
+.contacto .btn-enviar{
+    background-color: none;
+    padding: 5px 15px;
+    border: 2.5px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+.contacto .btn-enviar:hover{
+    background-color: white;
+    color: black;
+}
+
+/*-------FOOTER--------*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
