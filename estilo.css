@@ -147,7 +147,7 @@ header nav ul li span.selected {
 }
 
 #inicio .contenedor-img .img {
-    background-image: url(../img/compu.jpg);
+    background-image: url(img/compu.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -315,6 +315,11 @@ header nav ul li span.selected {
     padding: 5px 15px;
 }
 
+#proyectos .contenedor-proyectos .encabezado-proyectos a:hover{
+    background-color: black;
+    color: white;
+} 
+
 .activada {
     background-color: black;
     color: white !important;
@@ -330,7 +335,7 @@ header nav ul li span.selected {
 
 #proyectos .galeria {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 30px;
 }
 

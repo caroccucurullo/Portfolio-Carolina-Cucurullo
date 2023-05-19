@@ -119,10 +119,10 @@
                     <h3>Estos son algunos de mis proyectos</h3>
                 </div>
                 <div class="contenedor-der" id="categorias">
-                    <a href="javascript:void(0)" class="activada">Todos</a>
-                    <a href="javascript:void(0)">Consola</a>
-                    <a href="javascript:void(0)">Web</a>
-                    <a href="javascript:void(0)">Escritorio</a>
+                    <a href="javascript:void(0)" class="activada" id="todos" onclick="verCategoria ('todos')">Todos</a>
+                    <a href="javascript:void(0)" id="consola" onclick="verCategoria ('consola')">Consola</a>
+                    <a href="javascript:void(0)" id="web" onclick="verCategoria ('web')">Web</a>
+                    <a href="javascript:void(0)"id="escritorio" onclick="verCategoria ('escritorio')">Escritorio</a>
                 </div>
             </div>
             <div class="galeria" id="galeria">
@@ -189,6 +189,8 @@
     <footer>
         <p>Creado por Carolina Cucurullo 2023</p>
     </footer> 
+
+    <script src="script.js"></script>
 
 </body>
 </html>
